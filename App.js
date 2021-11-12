@@ -1,19 +1,20 @@
-import { Link, Route, Router, Switch } from 'react-router-dom';
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Route, Router } from 'react-router-dom';
+import React  from 'react';
 import './App.css';
-import home from './pages/home';
+// eslint-disable-next-line
+import home from './pages/home'; 
+// import main from './pages/main';
 
 function App() {
   return (
     <Router>
-        <Switch>
-            <Route path="/" exact>
+          <Route path="/">
             <home />
-            </Route>
-        </Switch>
+          </Route>
+          {/* <Route path="/main" exact component={main}></Route> */}
+      
     </Router>
-    
+
   );
 };
 
